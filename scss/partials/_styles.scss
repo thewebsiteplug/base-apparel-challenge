@@ -1,6 +1,8 @@
 // Color Variables
 //
-$DesRed: hsl(0, 36%, 70%);
+$DesRed: #ce9797;
+$SoftRed: #f96262;
+$Gradient: linear-gradient(135deg, rgba(206, 151, 151, 1) 0%, rgba(249, 98, 98, 1) 100%);
 
 body {
     margin: 0;
@@ -44,6 +46,34 @@ body {
             font-family: "JosefinSans SemiBold";
             font-size: 1.2rem;
             color: $DesRed;
+        }
+
+        .input-group {
+            input {
+                border: 1px solid $DesRed;
+                border-radius: 30px !important;
+                padding: 25px;
+                font-family: "JosefinSans SemiBold";
+                color: $DesRed;
+            }
+
+            .input-group-append {
+                position: absolute;
+                right: 0;
+                height: 60px;
+                z-index: 1;
+                top: -4px;
+
+                .btn {
+                    background: linear-gradient(135deg, rgba(206, 151, 151, 1) 0%, rgba(249, 98, 98, 1) 100%);
+                    border-radius: 30px;
+                    padding: 15px 25px;
+                    width: 100px;
+                    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+                    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+                    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+                }
+            }
         }
     }
 
